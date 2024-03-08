@@ -11,7 +11,18 @@ Shape class
 
 Shape class would include style
 Each shape has function to draw onto the canvas
+    
+So 
+Shape
     virtual void draw(Canvas& c) = 0; 
+    style s; 
+
+Triangle : Shape 
+    void draw(Canvas& c) override {
+        c.draw_polygon ( pts, s);
+}
+vector pts
+    
 
 Triangle 
     draw(Canvas& c)
@@ -23,8 +34,10 @@ Shapes we would like:
 #include "style.h"
 
 Triangle
-Elipse
+Ellipse
 Rectangle 
 Freeform
+
+
 
 end of Alisa Novak */
