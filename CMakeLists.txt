@@ -9,4 +9,5 @@ add_executable(csc231_graphics_project1
         triangle.cpp
         polygon.cpp
         ellipse.cpp
+        point.cpp
 )
