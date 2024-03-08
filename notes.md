@@ -2,7 +2,6 @@
 /* Alisa Novak 03/08/2024 
 Front End Notes 
 
-
 #include "style.h"
 
 Shape class 
