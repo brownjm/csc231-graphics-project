@@ -7,4 +7,6 @@ add_executable(csc231_graphics_project1
         main.cpp
         shape.cpp
         triangle.cpp
+        polygon.cpp
+        ellipse.cpp
 )
