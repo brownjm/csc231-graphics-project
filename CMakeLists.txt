@@ -10,4 +10,5 @@ add_executable(csc231_graphics_project1
         polygon.cpp
         ellipse.cpp
         point.cpp
+        flower.cpp
 )
