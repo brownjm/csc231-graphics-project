@@ -5,10 +5,13 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(csc231_graphics_project1
         main.cpp
+        canvas.cpp
+        ellipse.cpp
+        flower.cpp
+        parallelogram.cpp
+        point.cpp
+        polygon.cpp
+        rectangle.cpp
         shape.cpp
         triangle.cpp
-        polygon.cpp
-        ellipse.cpp
-        point.cpp
-        flower.cpp
 )
