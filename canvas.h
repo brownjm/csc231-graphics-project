@@ -4,7 +4,7 @@
 #pragma once
 
 class Canvas{
-    virtual void draw_polygon(std::vector<point> pts, style s) = 0;
-    virtual void draw_polyline(std::vector<point> pts, style s) = 0;
-    virtual void draw_ellipse(point center, point radii, style s) = 0;
+    virtual void draw_polygon(std::vector<Point> pts, Style s) = 0;
+    virtual void draw_polyline(std::vector<Point> pts, Style s) = 0;
+    virtual void draw_ellipse(Point center, Point radii, Style s) = 0;
 };
