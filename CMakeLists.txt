@@ -11,8 +11,8 @@ add_executable(csc231_graphics_project1
         parallelogram.cpp
         point.cpp
         polygon.cpp
+        polyline.cpp
         rectangle.cpp
         shape.cpp
         triangle.cpp
-        polyline.cpp
 )
