@@ -22,6 +22,7 @@ target_link_libraries(backend PUBLIC canvas)
 add_library(shapes
         shape.cpp
         heart.cpp
+        triangle.cpp
 )
 target_link_libraries(shapes PUBLIC canvas)
 
