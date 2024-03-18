@@ -1,13 +1,4 @@
-/*
- * Canvas
- * Draw functions(all virtual)
- * draw polygon
- * draw ellipse
- * draw line
- * Poly and line take a vector of Points
- * Ellipse takes center point, takes another point that contains radii
- * all take stylistic stuff
- */
+
 #include <vector>
 #include "point.h"
 #pragma once
