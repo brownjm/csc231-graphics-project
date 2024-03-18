@@ -15,4 +15,5 @@ add_executable(csc231_graphics_project1
         rectangle.cpp
         shape.cpp
         triangle.cpp
+        polyline.cpp
 )
