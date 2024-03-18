@@ -1,6 +1,7 @@
 
 #include <vector>
 #include "point.h"
+#include "style.h"
 #pragma once
 
 class Canvas{
