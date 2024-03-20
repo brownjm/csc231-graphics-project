@@ -4,6 +4,9 @@
 
 #pragma once
 
-class rectangle {
+class Rectangle : public Shape {
+    void draw(Canvas& c) override;
 
+protected:
+    std::vector<int> pts;
 };
