@@ -5,5 +5,5 @@ class Polyline : public Shape {
 public:
     void draw (Canvas& c) override;
 protected:
-    std::vector<int> pts;
+    std::vector<Point> pts;
 };

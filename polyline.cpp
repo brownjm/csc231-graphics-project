@@ -4,5 +4,5 @@
 std::vector<int> pts;
 
 void Polyline::draw(Canvas& c) {
-    c.draw_polyline(pts, s);
+    c.draw_polyline(pts, style);
 };
