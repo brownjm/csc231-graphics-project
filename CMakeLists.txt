@@ -9,6 +9,7 @@ add_library(canvas
         canvas.cpp
         parrot.cpp
         point.cpp
+        svg.cpp
 )
 
 # main() for testing
