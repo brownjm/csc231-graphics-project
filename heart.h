@@ -2,6 +2,8 @@
 #include "shape.h"
 
 class Heart : public Shape {
+public:
+
     void draw (Canvas& c) override;
 
 protected:
