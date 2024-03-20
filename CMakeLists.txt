@@ -14,6 +14,7 @@ add_library(canvas
 # main() for testing
 add_executable(backend
         backend-main.cpp
+        polyline.cpp
 )
 target_link_libraries(backend PUBLIC canvas)
 
