@@ -1,8 +1,8 @@
 #include "polyline.h"
 
-Polyline:Shape
-void draw(Canvas& c) override {
-    c.draw_polyline(pts, s);
-};
+
 std::vector<int> pts;
 
+void Polyline::draw(Canvas& c) {
+    c.draw_polyline(pts, style);
+};

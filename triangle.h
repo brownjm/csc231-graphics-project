@@ -6,5 +6,5 @@
 class Triangle : public Shape {
     void draw (Canvas& c) override;
 private:
-    std::vector<int> pts;
+    std::vector<Point> pts;
 };
