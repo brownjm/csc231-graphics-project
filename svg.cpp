@@ -22,7 +22,8 @@ void SVG::draw_polygon(std::vector<Point> pts, Style s) {
 }
 
 void SVG::save(std::string& filename) {
-
+    std::ofstream output {filename};
+    output << "<svg ";
 }
 
 SVG::SVG(int width, int height): width {width}, height {height} {}
