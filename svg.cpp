@@ -18,7 +18,10 @@ void SVG::draw_polyline(std::vector<Point> pts, Style s) {
 }
 
 void SVG::draw_polygon(std::vector<Point> pts, Style s) {
-
+    std::string line;
+    for (Point point : pts) {
+        line += std::to_string(point.x) + " " + std::to_string(point.y) + " ";
+    }
 }
 
 void SVG::save(std::string& filename) {
@@ -32,10 +35,10 @@ std::string quote(const std::string& s) {
     return "\"" + s + "\"";
 }
 
-std::string points_to_string(const std::pair<std::string, std::string>& p) {
+std::string pair_to_string(const std::pair<std::string, std::string>& p) {
     return p.first + "=" + quote(p.second);
 }
 
-std::string points_to_string(const std::pair<std::string, double>& p) {
+std::string pair_to_string(const std::pair<std::string, double>& p) {
     return p.first + "=" + std::to_string(p.second);
 }
