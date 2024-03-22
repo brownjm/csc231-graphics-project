@@ -5,10 +5,9 @@
 class Ellipse : public Shape {
 public:
 
-    Ellipse (int x, int y, int rx, int ry);
-    //where pts is the midpoint and rx is the horizontal radius and ry is the vertical radius
+    Ellipse(Point center, Point radii);
 
     void draw (Canvas& c) override;
 protected:
-    int x, y, rx, ry;
+    Point center, radii;
 };
