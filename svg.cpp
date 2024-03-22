@@ -13,11 +13,11 @@ void SVG::draw_ellipse(Point center, Point radii, Style s) {
 
 }
 
-void SVG::draw_polyline(std::vector<Point> points_to_string, Style s) {
+void SVG::draw_polyline(std::vector<Point> pts, Style s) {
 
 }
 
-void SVG::draw_polygon(std::vector<Point> points_to_string, Style s) {
+void SVG::draw_polygon(std::vector<Point> pts, Style s) {
 
 }
 
