@@ -5,7 +5,7 @@
 
 class Polygon : public Shape {
 public:
-    Polygon(vector<Point> pts, Style style);
+    Polygon(vector<Point> pts);
     void draw(Canvas& c) override;
 private:
     std::vector<Point> pts;
