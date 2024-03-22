@@ -38,7 +38,7 @@ void Parrot::draw_ellipse(Point center, Point radii, Style s) {
     std::cout<<"The color you chose for the outside hides nothing, your evil is still clear"<<s.border_color;
 }
 
-void Parrot::save(std::string& filename) {
+void Parrot::save(const std::string& filename) {
     std::cout<<"Thou hast saved this file: "<<filename<<'\n';
     std::cout<<"Now leavest me alone vile heathen";
 }

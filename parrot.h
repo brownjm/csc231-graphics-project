@@ -10,7 +10,7 @@ public:
     void draw_polygon(std::vector<Point> pts, Style s) override;
     void draw_polyline(std::vector<Point> pts, Style s) override;
     void draw_ellipse(Point center, Point radii, Style s) override;
-    void save(std::string& filename);
+    void save(const std::string& filename);
     Parrot(Point size);
 private:
     Point size;
