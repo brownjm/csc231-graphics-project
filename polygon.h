@@ -4,7 +4,8 @@
 
 class Polygon : public Shape {
 public:
+    Polygon (Point start, int sides);
     void draw(Canvas& c) override;
 private:
-    std::vector<int> pts;
+    std::vector<Point> pts;
 };
