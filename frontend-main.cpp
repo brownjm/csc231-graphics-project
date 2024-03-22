@@ -1,4 +1,6 @@
 #include "shape.h"
+#include "parrot.h"
+#include <vector>
 
 int main() {
     SVG svg{100, 100};
