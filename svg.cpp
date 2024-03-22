@@ -25,6 +25,8 @@ void SVG::save(std::string& filename) {
 
 }
 
+SVG::SVG(int width, int height): width {width}, height {height} {}
+
 std::string quote(const std::string& s) {
     return "\"" + s + "\"";
 }
