@@ -15,7 +15,8 @@ public:
     SVG(int width, int height);
 
 private:
-    std::string data;
+    std::vector<std::string> data;
     int width, height;
+
 
 };
