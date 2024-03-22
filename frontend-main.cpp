@@ -1,3 +1,4 @@
+#include "shape.h"
 #include "parrot.h"
 #include <vector>
 #include <iostream>
