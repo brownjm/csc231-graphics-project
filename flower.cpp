@@ -7,6 +7,10 @@
 Flower::Flower(Point center, int radius)
 : center{center}, radius{radius} {}
 
+void Flower::draw(Canvas& c) {
+
+}
+
 //void Flower::draw(Canvas& c) {
 //    //draw ellipses #1-6 using ellipse draw()
 //    //style center + petals
