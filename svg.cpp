@@ -48,9 +48,10 @@ void SVG::draw_polygon(std::vector<Point> pts, Style s) {
     for (Point point : pts) {
         points += (std::to_string(point.x) + " " + std::to_string(point.y) + " ");
     }
-    std::string line {"polygon points="};
+    std::string line {"<polygon points="};
     line += quote(points);
     line += s.to_string();
+    line += "/>";
 
     data.push_back(line);
 }
