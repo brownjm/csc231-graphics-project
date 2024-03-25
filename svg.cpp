@@ -21,7 +21,15 @@ void SVG::draw_ellipse(Point center, Point radii, Style s) {
     );
     */
 
-    std::string entry = "<ellipse rx=\"" + std::to_string(radii.x) + "\" ry=\"" + std::to_string(radii.y) + "\" cx=\"" + std::to_string(center.x) + "\" cy=\"" + std::to_string(center.y) + " />";
+    std::string entry = "<ellipse rx=" + quote(std::to_string(radii.x))
+            + " ry=" + quote(std::to_string(radii.y))
+            + " cx=" + quote(std::to_string(center.x))
+            + " cy=" + quote(std::to_string(center.y))
+            + " stroke=" + quote(s.border_color)
+            + " fill=" + quote(s.fill_color)
+            + " stroke-width=" + quote(std::to_string(s.border_thickness))
+            + " />";
+
     data.push_back(entry);
 }
 
