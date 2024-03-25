@@ -5,10 +5,7 @@ void Triangle::draw(Canvas& c) {
     c.draw_polygon(pts, style);
 }
 
-Point Triangle::p(int x, int y) {
-    return Point(x, y);
-}
+Triangle::Triangle(Point point_a, Point point_b, Point point_c)
+:pts{point_a, point_b, point_c} {
 
-void Triangle::pt_add(Point p) {
-    pts.push_back(p);
 }
