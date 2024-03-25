@@ -16,6 +16,4 @@ void Flower::draw(Canvas& c) {
     c.draw_ellipse({center.x - radius, center.y + (radius + radius/2)}, radii, style);
     c.draw_ellipse({center.x + radius, center.y - (radius + radius/2)}, radii, style);
     c.draw_ellipse({center.x - radius, center.y - (radius + radius/2)}, radii, style);
-
-
 };

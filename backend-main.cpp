@@ -14,4 +14,5 @@ int main() {
 
     SVG s(400, 600);
     s.draw_polygon(pts, c);
+    s.print();
 }
