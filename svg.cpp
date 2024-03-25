@@ -50,7 +50,7 @@ void SVG::draw_polygon(std::vector<Point> pts, Style s) {
     }
     std::string line {"polygon points="};
     line += quote(points);
-    line += "stroke=" + quote(s.border_color) + " fill=" + quote(s.fill_color) + " stroke-width=" + quote(std::to_string(s.border_thickness));
+    line += s.to_string();
 
     data.push_back(line);
 }
