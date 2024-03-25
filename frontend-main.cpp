@@ -14,6 +14,7 @@ int main() {
     p.save("image.svg");
 
     Triangle t{{0,0}, {2,2}, {5,0}};
+    t.draw(p);
 
     Flower f{{10, 10}, 10.0};
     f.draw(p);
