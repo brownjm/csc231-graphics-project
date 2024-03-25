@@ -12,6 +12,8 @@ public:
 
     void save(const std::string& filename);
 
+    void print();
+
     SVG(int width, int height);
 
 private:

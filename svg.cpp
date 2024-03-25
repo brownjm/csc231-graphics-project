@@ -2,6 +2,7 @@
 #include <format>
 
 #include "svg.h"
+#include <iostream>
 
 // Misc. Helpers
 std::string quote(const std::string& s);
@@ -46,11 +47,12 @@ void SVG::draw_polyline(std::vector<Point> pts, Style s) {
 }
 
 void SVG::draw_polygon(std::vector<Point> pts, Style s) {
-    std::string line {"polyline"};
+    std::string line {"polygon points= "};
     for (Point point : pts) {
-        line += quote(std::to_string(point.x) + " " + std::to_string(point.y) + " ") + "\n";
-        line += "stroke=" + quote(s.border_color) + "fill=" + quote(s.fill_color) + "stroke-width=" + quote(std::to_string(s.border_thickness));
+        line += (std::to_string(point.x) + " " + std::to_string(point.y) + " ");
     }
+    line += "\n\tstroke=" + quote(s.border_color) + " fill=" + quote(s.fill_color) + " stroke-width=" + quote(std::to_string(s.border_thickness));
+
     data.push_back(line);
 }
 
@@ -60,6 +62,12 @@ void SVG::save(const std::string& filename) {
 }
 
 SVG::SVG(int width, int height): width {width}, height {height} {}
+
+void SVG::print() {
+    for (const std::string& d :data) {
+        std::cout << d << "\n";
+    }
+}
 
 std::string quote(const std::string& s) {
     return "\"" + s + "\"";
