@@ -5,9 +5,9 @@
 #include "point.h"
 
 class Triangle : public Shape {
+public:
     void draw (Canvas& c) override;
+    Triangle(Point point_a, Point point_b, Point point_c);
 private:
     std::vector<Point> pts;
-    Point p (int x, int y);
-    void pt_add(Point p);
 };

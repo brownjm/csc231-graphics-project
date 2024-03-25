@@ -3,7 +3,7 @@
 #include <vector>
 #include <iostream>
 #include "ellipse.h"
-#include "polygon.h"
+#include "triangle.h"
 #include "flower.h"
 
 int main() {
@@ -13,8 +13,7 @@ int main() {
     e.draw(p);
     p.save("image.svg");
 
-    Polygon g{{{10, 30}, {50, 30}, {50, 20}}};
-    g.draw(p);
+    Triangle t{{0,0}, {2,2}, {5,0}};
 
     Flower f{{10, 10}, 10.0};
     f.draw(p);
