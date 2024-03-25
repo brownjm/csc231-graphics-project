@@ -4,6 +4,7 @@
 #include <iostream>
 #include "ellipse.h"
 #include "polygon.h"
+#include "flower.h"
 
 int main() {
     Parrot p{{200, 200}};
@@ -14,4 +15,7 @@ int main() {
 
     Polygon g{{{10, 30}, {50, 30}, {50, 20}}};
     g.draw(p);
+
+    Flower f{{10, 10}, 10.0};
+    f.draw(p);
 }
