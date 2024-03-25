@@ -1,4 +1,5 @@
 #include <fstream>
+#include <format>
 
 #include "svg.h"
 
@@ -10,7 +11,18 @@ std::string pair_to_string(const std::pair<std::string, std::string>& p); // str
 std::string pair_to_string(const std::pair<std::string, double>& p); // string + double
 
 void SVG::draw_ellipse(Point center, Point radii, Style s) {
+    /* // std::format() is only c++ v. 20 or higher (project runs v. 17)
+    std::string entry = std::format(
+            R"(<ellipse rx="{}" ry="{}" cx="{}" cy="{} />")",
+            std::to_string(radii.x),
+            std::to_string(radii.y),
+            std::to_string(center.x),
+            std::to_string(center.x)
+    );
+    */
 
+    std::string entry = "<ellipse rx=\"" + std::to_string(radii.x) + "\" ry=\"" + std::to_string(radii.y) + "\" cx=\"" + std::to_string(center.x) + "\" cy=\"" + std::to_string(center.y) + " />";
+    data.push_back(entry);
 }
 
 void SVG::draw_polyline(std::vector<Point> pts, Style s) {
