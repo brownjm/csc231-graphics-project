@@ -39,7 +39,7 @@ void SVG::draw_polyline(std::vector<Point> pts, Style s) {
         points += std::to_string(pt.x) +","+std::to_string(pt.y)+" ";
     }
     line += quote(points);
-    line += " stroke=" + quote(s.border_color) + "fill=" + quote(s.fill_color) + "stroke-width=" + quote(std::to_string(s.border_thickness));
+    line += s.to_string();
     data.push_back(line);
 }
 
