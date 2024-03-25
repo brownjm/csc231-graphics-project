@@ -4,3 +4,6 @@
 
 #include "rectangle.h"
 
+void Rectangle::draw(Canvas& c) {
+
+}
