@@ -1,6 +1,8 @@
 #include "shape.h"
 #include "parrot.h"
 #include <vector>
+#include <iostream>
+#include "ellipse.h"
 
 int main() {
     SVG svg{100, 100};
@@ -8,9 +10,10 @@ int main() {
     t.draw(svg);
     svg.save("image.svg");
 
-    Parrot parrot{{200, 100}};
-    Polygon p{{{30, 50}, {40, 60}, {20, 40}, {30, 60}, {70, 50}}};
-    p.style.color = "blue";
-    p.draw(parrot);
+    Parrot p{{200, 200}};
 
+    Ellipse e{{50, 50},{4,5}};
+    e.style.width = 4;
+    e.draw(p);
+    p.save("image.svg");
 }
