@@ -8,6 +8,7 @@ public:
     Ellipse(Point center, Point radii);
 
     void draw (Canvas& c) override;
+
 protected:
     Point center, radii;
 };

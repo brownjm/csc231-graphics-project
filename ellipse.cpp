@@ -5,6 +5,5 @@ Ellipse::Ellipse(Point center, Point radii)
     :center{center}, radii{radii}{}
 
 void Ellipse::draw(Canvas& c) {
-
     c.draw_ellipse(center, radii, style);
 }

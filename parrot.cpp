@@ -6,39 +6,37 @@ Parrot::Parrot(Point size): size{size}{
 }
 
 void Parrot::draw_polygon(std::vector<Point> pts, Style s) {
-   std::cout<<"Verily I say unto thee, these points make up the shape you see: \n";
+   std::cout<<"Points: \n";
    for(Point pt : pts){
        std::cout<<"("<<pt.x<<", "<<pt.y<<")"<<'\n';
    }
-   std::cout<<"Despite causing me much pain, your desire for colorful shapes is rather vain\n";
-   std::cout<<"The color on the inside is probably black, like your soul: "<<s.fill_color;
-   std::cout<<"The thicker the border the thicker the skull: "<<s.border_thickness;
-   std::cout<<"The color you chose for the outside hides nothing, your evil is still clear"<<s.border_color;
+   std::cout<<"Style:\n";
+   std::cout<<"Fill: "<<s.fill_color;
+   std::cout<<"Border: "<<s.border_thickness;
+   std::cout<<"Border color"<<s.border_color;
 }
 
 void Parrot::draw_polyline(std::vector<Point> pts, Style s) {
-    std::cout<<"Through the abuse of this brain of mine, here is your polyline: \n";
+    std::cout<<"Points: \n";
     for(Point pt : pts){
         std::cout<<"("<<pt.x<<", "<<pt.y<<")"<<'\n';
     }
-    std::cout<<"Despite causing me much pain, your desire for colorful shapes is rather vain\n";
-    std::cout<<"The color on the inside is probably black, like your soul: "<<s.fill_color;
-    std::cout<<"The thicker the border the thicker the skull: "<<s.border_thickness;
-    std::cout<<"The color you chose for the outside hides nothing, your evil is still clear"<<s.border_color;
-}
+    std::cout<<"Style:\n";
+    std::cout<<"Fill: "<<s.fill_color;
+    std::cout<<"Border: "<<s.border_thickness;
+    std::cout<<"Border color"<<s.border_color;
+   }
 
 void Parrot::draw_ellipse(Point center, Point radii, Style s) {
-    std::cout<<"This shape, like your mother, is round: \n";
-    std::cout<<"Its center is as follows: ("<<center.x<<", "<<center.y<<")\n";
+    std::cout<<"Ellipse: \n";
+    std::cout<<"Center point: ("<<center.x<<", "<<center.y<<")\n";
     std::cout<<"The horizontal radius is: "<<radii.x<<'\n';
     std::cout<<"The vertical radius is: "<<radii.y<<'\n';
-    std::cout<<"Despite causing me much pain, your desire for colorful shapes is rather vain\n";
-    std::cout<<"The color on the inside is probably black, like your soul: "<<s.fill_color;
-    std::cout<<"The thicker the border the thicker the skull: "<<s.border_thickness;
-    std::cout<<"The color you chose for the outside hides nothing, your evil is still clear"<<s.border_color;
-}
+    std::cout<<"Style:\n";
+    std::cout<<"Fill: "<<s.fill_color;
+    std::cout<<"Border: "<<s.border_thickness;
+    std::cout<<"Border color"<<s.border_color;}
 
 void Parrot::save(const std::string& filename) {
-    std::cout<<"Thou hast saved this file: "<<filename<<'\n';
-    std::cout<<"Now leavest me alone vile heathen";
+    std::cout<<"Saved: "<<filename<<'\n';
 }
