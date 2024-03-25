@@ -5,9 +5,10 @@
 
 class Flower : public Shape {
 public:
-    Flower(Point center, int radius);
+    Flower(Point center, double radius);
     void draw(Canvas& c) override;
 private:
     std::vector<Point> pts;
-    int radius;
+    double radius;
+    Point center;
 };
