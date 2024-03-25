@@ -8,7 +8,6 @@ Flower::Flower(Point center, double radius)
 
 void Flower::draw(Canvas& c) {
     Point radii{radius, radius};
-    Style style;
     c.draw_ellipse(center, radii, style);
     c.draw_ellipse({center.x + radius*2, center.y}, radii, style);
     c.draw_ellipse({center.x - radius*2, center.y}, radii, style);
