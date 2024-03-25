@@ -47,11 +47,13 @@ void SVG::draw_polyline(std::vector<Point> pts, Style s) {
 }
 
 void SVG::draw_polygon(std::vector<Point> pts, Style s) {
-    std::string line {"polygon points= "};
+    std::string points;
     for (Point point : pts) {
-        line += (std::to_string(point.x) + " " + std::to_string(point.y) + " ");
+        points += (std::to_string(point.x) + " " + std::to_string(point.y) + " ");
     }
-    line += "\n\tstroke=" + quote(s.border_color) + " fill=" + quote(s.fill_color) + " stroke-width=" + quote(std::to_string(s.border_thickness));
+    std::string line {"polygon points="};
+    line += quote(points);
+    line += "stroke=" + quote(s.border_color) + " fill=" + quote(s.fill_color) + " stroke-width=" + quote(std::to_string(s.border_thickness));
 
     data.push_back(line);
 }
