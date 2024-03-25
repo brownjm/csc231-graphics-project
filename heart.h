@@ -4,10 +4,12 @@
 class Heart : public Shape {
 public:
 
+    Heart(Point vertex);
+
     void draw (Canvas& c) override;
 
 protected:
-    std::vector<int> pts;
+    Point vertex;
 };
 
 //we are just going to have the user indicate
