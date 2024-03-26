@@ -1,0 +1,47 @@
+<svg width="600" height="500" xmlns="http://www.w3.org/2000/svg">
+    <path d="M100,300 C200,100 400,100 500,300"
+    style="fill:darkorange; stroke:orange; stroke-width:10"/>
+
+    <line>
+
+    </line>
+    <circle id="circle1" cx="50" cy="70" r="50"
+            style="fill:yellow;"
+            stroke-dasharray="30"
+            stroke="red"
+            stroke-width="30">
+
+        <animate
+                attributeName="cx"
+                begin="0"
+                dur="2s"
+                from="0%"
+                to="110%"
+                repeatCount="indefinite"/>
+
+        <animateTransform
+                attributeName="transform"
+                begin="0s"
+                dur="20s"
+                type="rotate"
+                from="0 85 85"
+                to="360 100 100"
+                repeatCount="indefinite"/>
+    </circle>
+
+    <circle r="50" cx="400" cy="75"
+            style="fill:wheat"
+            stroke-width="5"
+            stroke="black">Black Circle/>
+    </circle>
+
+    <polyline points="M350, 75 "
+    stroke="white"
+    stroke-width="3"/>
+
+<!--    <line x1="0" y1="0" x2="500" y2="500"-->
+<!--          stroke="green"-->
+<!--          stroke-dasharray="3"-->
+<!--          stroke-width="50">-->
+<!--    </line>-->
+</svg>
