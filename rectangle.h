@@ -1,16 +1,26 @@
-//
-// Created by anova on 3/8/2024.
-//
+// Created by anova on 03/08/2024
 
 #pragma once
 #include "shape.h"
+#include <vector>
 
 class Rectangle : public Shape {
 public:
-    Rectangle(std::vector<Point> pts, Style rectangle_style);
+    Rectangle(Point center, double length, double width, Style rectangle_style);
     void draw(Canvas& c) override;
-//    Style rectangle_style;
-
-protected:
     std::vector<Point> pts;
+    Style rectangle_style;
 };
+
+
+
+
+
+//
+//class Rectangle : public Shape {
+//public:
+//    Rectangle(std::vector<Point> pts, Style rectangle_style);
+//    void draw(Canvas& c) override;
+//    std::vector<Point> pts;
+//    Style rectangle_style;
+//};

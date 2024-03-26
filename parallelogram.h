@@ -1,9 +1,9 @@
-//
-// Created by anova on 3/8/2024
-//
+// Created by Alisa Novak on 03/08/2024
 
 #pragma once
 #include "shape.h"
+#include "vector"
+#include "point.h"
 #include <stdexcept>
 
 class Parallelogram : public Shape {
@@ -35,3 +35,16 @@ protected:
     double base, height, side;
 };
 */
+
+
+// #include "shape.h"
+//#include "vector"
+//#include "point.h"
+//
+//class Triangle : public Shape {
+//    void draw (Canvas& c) override;
+//private:
+//    std::vector<Point> pts;
+//    Point p (int x, int y);
+//    void pt_add(Point p);
+//};

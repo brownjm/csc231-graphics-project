@@ -1,6 +1,4 @@
-//
-// Created by anova on 3/8/2024.
-//
+// Created by Alisa Novak on 03/08/2024
 
 #include "parallelogram.h"
 #include <stdexcept>

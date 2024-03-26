@@ -23,7 +23,7 @@ target_link_libraries(backend PUBLIC canvas)
 # frontend team source files
 add_library(shapes
         shape.cpp
-        cube.cpp
+        rectangular-prism.cpp
         ellipse.cpp
         flower.cpp
         heart.cpp
