@@ -1,4 +1,4 @@
-// Created by anova on 03/08/2024
+// Created by Alisa Novak on 03/08/2024
 
 #pragma once
 #include "shape.h"
