@@ -2,7 +2,7 @@
 
 int main() {
     SVG svg{300, 500};
-    svg.draw_ellipse({150,200}, {50,50}, Style{});
+
     std::vector<Point> pts;
     Point point{2.0, 4.5};
     pts.push_back(point);
@@ -13,7 +13,11 @@ int main() {
     Point point3{2.0, 2.5};
     pts.push_back(point3);
     Style c;
+    Point center{150,200};
+    Point radii {50,50};
+    c.border_color = "red";
+    svg.draw_ellipse(center, radii, c);
 
-    svg.save("filedagainname.svg");
+    svg.save("filename.svg");
 
 }
