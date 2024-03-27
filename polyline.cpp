@@ -1,16 +1,13 @@
 #include "polyline.h"
 
 
-std::vector<int> pts;
+Polyline::Polyline(std::vector<Point> pts)
+:pts{pts} {
+    if (pts.size() <= 0) {
+        throw std::runtime_error("Vector must contain at least two points.");
+    }
+}
 
 void Polyline::draw(Canvas& c) {
     c.draw_polyline(pts, style);
 };
-
-Point Polyline::p(int x, int y) {
-    return Point (x,y);
-}
-
-void Polyline::pt_add(Point p) {
-    pts.push_back(p);
-}

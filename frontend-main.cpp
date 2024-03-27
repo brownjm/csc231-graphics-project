@@ -18,6 +18,12 @@ int main() {
     Triangle t{{0,0}, {2,2}, {5,0}};
     t.draw(p);
 
+    Polyline pl{{{0,0}, {1,2}}};
+    pl.draw(p);
+
+    Pentagon pg{{3,2}, {5,2}, {6,4}, {4,5}, {2,4}};
+    pg.draw(p);
+
     Flower f{{10, 10}, 10.0};
     f.draw(p);
 
