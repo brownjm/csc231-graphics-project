@@ -34,6 +34,7 @@ add_library(shapes
         triangle.cpp
         pentagon.cpp
         pentagon.h
+        star.cpp
 )
 target_link_libraries(shapes PUBLIC canvas)
 
