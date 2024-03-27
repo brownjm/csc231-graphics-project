@@ -1,5 +1,7 @@
 #include "parrot.h"
 #include <iostream>
+//Outputs data
+//Aiden Martin
 Parrot::Parrot(Point size): size{size}{
     std::cout<<"You made a image of these proportions: " << size.x<<
     " x "<<size.y;
