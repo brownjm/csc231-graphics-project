@@ -4,7 +4,7 @@
 
 #include "canvas.h"
 
-class SVG : Canvas {
+class SVG : public Canvas {
 public:
     void draw_polygon(std::vector<Point> pts, Style s) override;
     void draw_polyline(std::vector<Point> pts, Style s) override;
