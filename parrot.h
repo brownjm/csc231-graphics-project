@@ -5,6 +5,7 @@
 #include "point.h"
 #include <string>
 //organizes and repeats data given to it
+//Aiden Martin
 class Parrot : public Canvas {
 public:
     void draw_polygon(std::vector<Point> pts, Style s) override;

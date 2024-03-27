@@ -18,7 +18,7 @@ void SVG::draw_ellipse(Point center, Point radii, Style s) {
 
     data.push_back(entry);
 }
-
+//Aiden Martin
 void SVG::draw_polyline(std::vector<Point> pts, Style s) {
     std::string line {"<polyline points="};
     std::string points;
