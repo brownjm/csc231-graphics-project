@@ -20,14 +20,14 @@ void SVG::draw_ellipse(Point center, Point radii, Style s) {
 }
 
 void SVG::draw_polyline(std::vector<Point> pts, Style s) {
-    std::string line {"polyline points="};
+    std::string line {"<polyline points="};
     std::string points;
     for(Point pt : pts){
         points += std::to_string(pt.x) +","+std::to_string(pt.y)+" ";
     }
     quote(points);
     line += points;
-    line += "stroke=" + quote(s.border_color) + "fill=" + quote(s.fill_color) + "stroke-width=" + quote(std::to_string(s.border_thickness));
+    line += s.to_string()+"/>";
     data.push_back(line);
 }
 
