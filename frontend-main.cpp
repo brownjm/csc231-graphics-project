@@ -5,6 +5,8 @@
 #include "ellipse.h"
 #include "triangle.h"
 #include "flower.h"
+#include "heart.h"
+#include "svg.h"
 
 int main() {
     Parrot p{{200, 200}};
@@ -18,4 +20,8 @@ int main() {
 
     Flower f{{10, 10}, 10.0};
     f.draw(p);
+
+    SVG c{500,500};
+
+    Heart{{17,17}};
 }
