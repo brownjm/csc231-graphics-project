@@ -7,6 +7,9 @@
 #include "flower.h"
 #include "heart.h"
 #include "svg.h"
+#include "polygon.h"
+#include "polyline.h"
+#include "pentagon.h"
 
 int main() {
     Parrot p{{200, 200}};
