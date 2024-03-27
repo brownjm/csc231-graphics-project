@@ -43,7 +43,7 @@ void SVG::draw_polygon(std::vector<Point> pts, Style s) {
 void SVG::save(const std::string& filename) {
     std::ofstream output {filename};
     output << "<svg width = " << quote(std::to_string(width)) << " height = " << quote(std::to_string(height)) << " xmlns=\"http://www.w3.org/2000/svg\">\n";
-    for(std::string line : data) {
+    for(std::string& line : data) {
         output << line << '\n';
     }
     output << "</svg>\n";

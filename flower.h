@@ -8,7 +8,6 @@ public:
     Flower(Point center, double radius);
     void draw(Canvas& c) override;
 private:
-    std::vector<Point> pts;
-    double radius;
+    double radius; //allows all 6 petals to be circles with identical radii
     Point center;
 };

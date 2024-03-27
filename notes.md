@@ -41,3 +41,24 @@ Freeform
 
 
 end of Alisa Novak */
+
+/* Lucas Carter 03/27/2024
+(frontend)
+User Guide:
+    User = person writing main()
+    How to create canvas 
+    How to create shapes and draw them on canvas
+    How to change  properties
+    Example code 
+
+For each of us:
+    add relevant and good comments  
+    put name on file that you did 
+
+Development Guide: 
+    explain code organization 
+    explain how to create new shape
+end of Lucas Carter */
+    
+
+

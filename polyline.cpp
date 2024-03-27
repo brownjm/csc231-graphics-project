@@ -1,5 +1,5 @@
 #include "polyline.h"
-
+#include <stdexcept>
 
 Polyline::Polyline(std::vector<Point> pts)
 :pts{pts} {
