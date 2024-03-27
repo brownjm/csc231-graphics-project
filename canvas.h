@@ -3,7 +3,7 @@
 #include "point.h"
 #include "style.h"
 #pragma once
-
+//pure virtual class for any image type
 class Canvas{
 public:
     virtual void draw_polygon(std::vector<Point> pts, Style s) = 0;
