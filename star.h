@@ -8,10 +8,12 @@
 
 class Star : public Shape {
 public:
-    Star(double center_x, double center_y, double pent_height);
+    Star(double center_x, double center_y, double pent_height, std::string fill_color, std::string border_color);
     void draw(Canvas& c) override;
 private:
-    double center_x{2};
-    double center_y{4};
-    double pent_height{2};
+    double center_x;
+    double center_y;
+    double pent_height;
+    std::string fill_color = "yellow";
+    std::string border_color = "yellow";
 };

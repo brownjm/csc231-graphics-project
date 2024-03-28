@@ -10,6 +10,7 @@
 #include "polygon.h"
 #include "polyline.h"
 #include "pentagon.h"
+#include "star.h"
 
 int main() {
     Parrot p{{200, 200}};
@@ -30,7 +31,11 @@ int main() {
     Flower f{{10, 10}, 10.0};
     f.draw(p);
 
+    Star s(250,250,30,"yellow","yellow");
+
     SVG c{500,500};
 
     Heart{{300,300}};
+    s.draw (c);
+    c.save("star.svg");
 }
