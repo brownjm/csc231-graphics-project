@@ -8,9 +8,10 @@
 
 class Star : public Shape {
 public:
-    Star(Point center, double lower_left);
+    Star(double center_x, double center_y, double pent_height);
     void draw(Canvas& c) override;
 private:
-    Point center{0,0};
-    double lower_left{1};
+    double center_x{2};
+    double center_y{4};
+    double pent_height{2};
 };
