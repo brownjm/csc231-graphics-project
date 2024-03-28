@@ -22,7 +22,7 @@ Star::Star(double center_x, double center_y, double pent_height, std::string fil
 }
 
 void Star::draw(Canvas& c) {
-    double half_height = {pent_height / 2};
+    double half_height = pent_height / 2;
     // points start at bottom of shape and go counterclockwise
     Point pt_a = {center_x, center_y + pent_height};
     Point pt_b = {center_x + pent_height, center_y};
