@@ -1,19 +1,5 @@
-[user_guide_back.md](https://github.com/brownjm/csc231-graphics-project/files/14781094/user_guide_back.md)# csc231-graphics-project
-To be filled in at the end of the project
+# Making Use of the SVG Canvas
 
-## Getting started
-Make a ~~square~~ <u>quadralateral</u>
-```C++
-int main() {
-    Square s{};
-}
-```
-
-
-# User Guide - Front End
-
-
-# User Guide - Back End
 ## Getting Started
 Simply put, there are 4 steps involved in this program<br>
 1. Create an SVG canvas
@@ -132,10 +118,3 @@ You have now saved a svg image file to your computer
 
 
 
-oading user_guide_back.md…]()
-
-
-# Developer Guide - Front End
-
-
-# Developer Guide - Back End
